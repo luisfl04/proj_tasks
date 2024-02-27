@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    
+    <div class="container">
+        
+        <form method="post" enctype="multipart/form-data" class="formulario-register">
+            
+            {% csrf_token %}
+            <div class="formulario-titulo">
+                <p class="titulo-register">Crie uma nova conta</p>
+                <p class="subtitulo-register">É facil e rápido</p>
+            </div>
+            
+            <div class="formulario-campos">
+                
+                <label for="formulario_first_name" class="formulario-campos-titulo">Nome</label>
+                <div class="formulario-campos-input">
+                    {{ formulario.first_name }}
+                </div>    
+            
+            </div>
+            
+            <div class="formulario-campos">
+                
+                <label for="formulario_last_name"  class="formulario-campos-titulo">Sobrenome</label>
+                <div class="formulario-campos-input">
+                    {{ formulario.last_name }}
+                </div>    
+            
+            </div>
+            
+            <div class="formulario-campos">
+                
+                <label for="formulario_first_name"  class="formulario-campos-titulo">Idade</label>
+                <div class="formulario-campos-input">
+                    {{ formulario.age }}
+                </div>    
+            
+            </div>
+
+            <div class="formulario-campos">
+                
+                <label for="formulario_first_name"  class="formulario-campos-titulo">Email</label>
+                <div class="formulario-campos-input">
+                    {{ formulario.email }}
+                </div>    
+            
+            </div>
+
+            <div class="formulario-campos">
+                
+                <label for="formulario_first_name"  class="formulario-campos-titulo">Usuário</label>
+                <div class="formulario-campos-input">
+                    {{ formulario.username }}
+                </div>    
+            
+            </div>
+
+            <div class="formulario-campos">
+                
+                <label for="formulario_first_name"  class="formulario-campos-titulo">Senha</label>
+                <div class="formulario-campos-input">
+                    {{ formulario.password }}
+                </div>    
+            
+            </div>
+
+            <input type="submit" value="Cadastre-se">
+        
+            <a class="" href="{% url 'login:login' %}">faça login</a>
+        
+        </form>
+
+    </div>
+
+
+
+</body>
+</html>
