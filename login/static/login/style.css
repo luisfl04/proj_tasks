@@ -1,4 +1,225 @@
 * {
     margin:0;
-    
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* estilos do formulario de cadastro: */
+
+body {
+    background-color:#e6e6e6;
+    color: #1a1a00;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.imagem-register {
+    margin-bottom: 1px;
+}
+
+.imagem-register img {
+    width:140px;
+    height: 140px;
+}
+
+.formulario-register {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1),
+    0 8px 16px rgba(0, 0, 0, .1);
+    width: 450px;
+    height: 550px;
+    border: transparent;
+    border-radius: 11px;
+    z-index: 5;
+}
+
+.formulario-titulo {
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.titulo-register {
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin-top: 6px;
+}
+
+.subtitulo-register {
+    font-size: 15px;
+    color:#606770;
+    margin-bottom: 8px;
+}
+
+.formulario-campo {
+    border-top: 1px solid #dadde1;
+    padding: 20px 25px;
+}
+
+.formulario-input {
+    margin-bottom: 15px;
+}
+
+.formulario-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-primary {
+    margin-top: 15px;
+    text-decoration: none;
+}
+
+/* estilos da pagina de login: */
+
+.foto-login{
+    margin-bottom: 2px;
+}
+
+.foto-login img {
+    width:150px;
+    height: 150px;
+}
+
+.formulario-login {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1),
+    0 8px 16px rgba(0, 0, 0, .1);
+    z-index: 5;
+    border:transparent;
+    border-radius: 11px;
+    height: 398px;
+    width: 392.83px;
+}
+
+.formulario-login-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+}
+
+.titulo-login {
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.formulario-login-campo {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+.formulario-login-input {
+    height: 52px;
+    margin-bottom: 12px;
+}
+
+.formulario-login-input-submit {
+    width: 100%;
+    height: 50px;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.formulario-login-campo-error {
+    height: 5px;
+    font-size: 11px;
+    color: red;
+    font-weight: bold;
+}
+
+.formulario-login-footer {
+    border-top: 1px solid #dadde1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 109px;
+}
+
+.formulario-login-footer-auxilio {
+    margin-bottom: 2px;
+    color: #1a1a00;
+}
+
+.formulario-login-footer-botao {
+    background-color: #42a72a;
+    height: 50px;
+    border:transparent;
+    border-radius: 8px;
+    opacity: 1;
+    padding: 0 15px;
+}
+
+.formulario-login-footer-botao:hover{
+    background-color: #2d7a19;
+}
+
+.formulario-login-footer-link {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* interação mostrar e ocultar senha: */
+.password-container {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+/* estilos do footer: */
+.footer-auth-pages {
+    background-color: white;
+    height: 90px;
+    z-index: 6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-auth-pages-texto a{
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #1a1a00;
+}
+
+.footer-auth-pages-texto a:hover{
+    text-decoration: underline;
+}
+
+.footer-auth-pages-link-sobre {
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.footer-auth-pages-link-sobre:hover {
+    text-decoration: underline;
+}
+
+.footer-auth-pages-link-sobre,
+.footer-auth-pages-texto {
+    padding: 0 30px;
 }

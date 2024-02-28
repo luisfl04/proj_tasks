@@ -13,11 +13,12 @@ def register(request):
     if formulario.is_valid():
         formulario.save()
         return HttpResponseRedirect(reverse("login:login"))
-    
+    else:
+        RegisterForm()
+
     template = "login/register.html"
     context = {
         "formulario": formulario,
-        "action": "Register",
     }
 
     return render(request, template, context)
@@ -34,14 +35,13 @@ def login(request):
         if DadosRegistro.objects.filter(username = user, password = senha).exists():
             return HttpResponseRedirect(reverse("page:index"))     
         else:
-            messages.error(request, "Usuário ou senha incorretos, tente novamentte. ")
+            messages.error(request, "Usuário ou senha incorretos, tente novamente ou crie uma nova conta. ")
     else:
         LoginForm()
 
     template = "login/login.html"
     context = {
         "formulario": formulario,
-        "action": "Login"
     }
 
     return render(request, template, context)

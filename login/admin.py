@@ -1,3 +1,5 @@
 from django.contrib import admin
+from .models import DadosRegistro
 
-# Register your models here.
+
+admin.site.register(DadosRegistro)
