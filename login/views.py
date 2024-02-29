@@ -33,7 +33,7 @@ def login(request):
         senha = formulario.cleaned_data["password"]
 
         if DadosRegistro.objects.filter(username = user, password = senha).exists():
-            return HttpResponseRedirect(reverse("page:index"))     
+            return HttpResponseRedirect(reverse("page:home"))     
         else:
             messages.error(request, "Usuário ou senha incorretos, tente novamente ou crie uma nova conta. ")
     else:

@@ -1,0 +1,173 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilo padrão do card primário "minhas tarefas": */
+
+.card-minhas-tarefas {
+
+}
+
+.card-minhas-tarefas-head {
+
+}
+
+.card-minhas-tarefas-head-titulo {
+
+}
+
+.card-minhas-tarefas-campo{
+
+}
+
+.card-minhas-tarefas-campo-left {
+
+}
+
+.card-minhas-tarefas-campo-right {
+
+}
+
+/* estilo "link invisível" para a view "done". */
+
+.link-invisivel {
+
+}
+
+.link-invisivel a {
+    
+}
+
+
+/* estilos dos checkbox do card: */
+
+.card-minhas-tarefas-campo-left-container{
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.card-minhas-tarefas-campo-left-container input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.card-minhas-tarefas-campo-left-container-checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+.card-minhas-tarefas-campo-left-container:hover ~ 
+.card-minhas-tarefas-campo-left-container-checkmark {
+    background-color: #ccc;
+}
+
+.card-minhas-tarefas-campo-left-container input:checked ~
+.card-minhas-tarefas-campo-left-container-checkmark {
+    background-color: #2196f3;
+}
+
+.card-minhas-tarefas-campo-left-container-checkmark:after {
+    content: " ";
+    position: absolute;
+    display: none;
+} 
+
+.card-minhas-tarefas-campo-left-container input:checked ~ 
+.card-minhas-tarefas-campo-left-container-checkmark:after {
+    display: block;
+}
+
+.card-minhas-tarefas-campo-left-container
+.card-minhas-tarefas-campo-left-container-checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 9px;
+    height: 14px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* estilo do checkmark das tarefas finalizadas: */
+.card-minhas-tarefas-campo-right-container{
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.card-minhas-tarefas-campo-right-container input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.card-minhas-tarefas-campo-right-container-checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+.card-minhas-tarefas-campo-right-container:hover ~ 
+.card-minhas-tarefas-campo-right-container-checkmark {
+    background-color: #ccc;
+}
+
+.card-minhas-tarefas-campo-right-container input:checked ~
+.card-minhas-tarefas-campo-right-container-checkmark {
+    background-color: #2196f3;
+}
+
+.card-minhas-tarefas-campo-right-container-checkmark:after {
+    content: " ";
+    position: absolute;
+    display: none;
+} 
+
+.card-minhas-tarefas-campo-right-container input:checked ~ 
+.card-minhas-tarefas-campo-right-container-checkmark:after {
+    display: block;
+}
+
+.card-minhas-tarefas-campo-right-container
+.card-minhas-tarefas-campo-right-container-checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 9px;
+    height: 14px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}

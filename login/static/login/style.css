@@ -6,7 +6,7 @@
 
 /* estilos do formulario de cadastro: */
 
-body {
+.corpo {
     background-color:#e6e6e6;
     color: #1a1a00;
     font-family: Arial, Helvetica, sans-serif;
@@ -188,7 +188,7 @@ body {
 
 /* estilos do footer: */
 .footer-auth-pages {
-    background-color: white;
+    background-color:#e6e6e6;
     height: 90px;
     z-index: 6;
     display: flex;
@@ -222,4 +222,576 @@ body {
 .footer-auth-pages-link-sobre,
 .footer-auth-pages-texto {
     padding: 0 30px;
+}
+
+/* responsividade da página de login: */
+@media screen and (max-width:824px) {
+    .foto-login img{
+    width: 115px;
+    height: 115px;
+    }
+    .formulario-login {
+        height: 330px;
+        width: 334.83px;
+    }
+    .formulario-login-titulo {
+        height: 59px;
+    }
+    .titulo-login {
+        font-size: 1.2rem;
+    }
+    .formulario-login-campo {
+        padding: 7px 16px;
+        margin-bottom: 16px;
+    }
+    .formulario-login-input {
+        height: 45px;
+        margin-bottom: 10px;
+    }
+    .formulario-login-input-submit {
+        height:45px ;
+        font-size: 1.4rem;
+    }
+    .formulario-login-campo-error {
+        height: 3px;
+        font-size: 10px;
+    }
+    .formulario-login-campo-error img {
+        width: 10px;
+    }
+    .formulario-login-footer {
+        height: 86px;
+    }
+    .formulario-login-footer-auxilio {
+        font-size: 14px;
+    }
+    .formulario-login-footer-botao {
+        height: 40px;
+        padding:0 11px;
+    }
+    .formulario-login-footer-link {
+        font-size: 1rem;;
+    }
+    .footer-auth-pages {
+        height: 70px;
+    }
+    
+    .footer-auth-pages-texto a{
+        font-size: 1.1rem;
+    }
+    
+    .footer-auth-pages-link-sobre {
+        font-size: 1.1rem;
+    }
+    .footer-auth-pages-link-sobre,
+    .footer-auth-pages-texto {
+        padding: 0 26px;
+    }
+}
+
+@media screen and (max-width: 484px) {
+    .foto-login img {
+        height: 95px;
+        width: 95px;
+    }
+    .formulario-login {
+        width: 304.83px;
+        height: 300px;
+    }
+    .formulario-login-titulo {
+        height: 50px;
+    }
+    .titulo-login {
+        font-size: 1.1rem;
+    }
+    .formulario-login-campo {
+        padding: 5px 14px;
+        margin-bottom: 14px;
+    }
+    .formulario-login-input {
+        height: 40px;
+        margin-bottom: 8px;
+    }
+    .formulario-login-input-submit {
+        height:40px ;
+        font-size: 1.3rem;
+    }
+    .formulario-login-campo-error {
+        height: 2px;
+        font-size: 9px;
+    }
+    .formulario-login-campo-error img {
+        width: 9px;
+    }
+    .formulario-login-footer {
+        height: 78px;
+    }
+    .formulario-login-footer-auxilio {
+        font-size: 13px;
+    }
+    .formulario-login-footer-botao {
+        height: 36px;
+        padding:0 9px;
+    }
+    .formulario-login-footer-link {
+        font-size: 0.9rem;
+    }
+    .footer-auth-pages {
+        height: 60px; 
+    }
+    
+    .footer-auth-pages-texto a{
+        font-size: 1rem;
+    }
+    
+    .footer-auth-pages-link-sobre {
+        font-size: 1rem;
+    }
+    
+    .footer-auth-pages-link-sobre,
+    .footer-auth-pages-texto {
+        padding: 0 22px;
+    }
+}
+
+@media screen and (max-width: 368px) {
+    .foto-login img {
+        height: 80px;
+        width: 80px;
+    }
+    .formulario-login {
+        width: 274.83px;
+        height: 270px;
+    }
+    .formulario-login-titulo {
+        height: 42px;
+    }
+    .titulo-login {
+        font-size: 1rem;
+    }
+    .formulario-login-campo {
+        padding: 3px 12px;
+        margin-bottom: 12px;
+    }
+    .formulario-login-input {
+        height: 36px;
+        margin-bottom: 6px;
+    }
+    .formulario-login-input-submit {
+        height:36px ;
+        font-size: 1.2rem;
+    }
+    .formulario-login-campo-error {
+        height: 2px;
+        font-size: 9px;
+    }
+    .formulario-login-campo-error img {
+        width: 9px;
+    }
+    .formulario-login-footer {
+        height: 70px;
+    }
+    .formulario-login-footer-auxilio {
+        font-size: 12px;
+    }
+    .formulario-login-footer-botao {
+        height: 33px;
+        padding:0 8px;
+    }
+    .formulario-login-footer-link {
+        font-size: 0.8rem;
+    }
+    .footer-auth-pages {
+        height: 50px; 
+    }
+    
+    .footer-auth-pages-texto a{
+        font-size: 0.9rem;
+    }
+    
+    .footer-auth-pages-link-sobre {
+        font-size: 0.9rem;
+    }
+    
+    .footer-auth-pages-link-sobre,
+    .footer-auth-pages-texto {
+        padding: 0 19px;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .foto-login img {
+        height: 70px;
+        width: 70px;
+    }
+    .formulario-login {
+        width: 234.83px;
+        height: 230px;
+    }
+    .formulario-login-titulo {
+        height: 36px;
+    }
+    .titulo-login {
+        font-size: 0.9rem;
+    }
+    .formulario-login-campo {
+        padding: 2px 10px;
+        margin-bottom: 10px;
+    }
+    .formulario-login-input {
+        height: 30px;
+        margin-bottom: 6px;
+    }
+    .formulario-login-input-submit {
+        height:33px ;
+    }
+    .formulario-login-campo-error {
+        height: 2px;
+        font-size: 9px;
+    }
+    .formulario-login-campo-error img {
+        width: 9px;
+    }
+    .formulario-login-footer {
+        height: 65px;
+    }
+    .formulario-login-footer-auxilio {
+        font-size: 12px;
+    }
+    .formulario-login-footer-botao {
+        height: 33px;
+        padding:0 8px;
+    }
+    .formulario-login-footer-link {
+        font-size: 0.8rem;
+    }
+    .footer-auth-pages {
+        height: 45px; 
+    }
+    
+    .footer-auth-pages-texto a{
+        font-size: 0.8rem;
+    }
+    
+    .footer-auth-pages-link-sobre {
+        font-size: 0.8rem;
+    }
+    
+    .footer-auth-pages-link-sobre,
+    .footer-auth-pages-texto {
+        padding: 0 17px;
+    }
+}
+
+@media screen and (max-width:256px) {
+    .foto-login img {
+        height: 70px;
+        width: 70px;
+    }
+    .formulario-login {
+        width: 204.83px;
+        height: 200px;
+    }
+    .formulario-login-titulo {
+        height: 30px;
+    }
+    .titulo-login {
+        font-size: 0.8rem;
+    }
+    .formulario-login-campo {
+        padding: 1px 8px;
+        margin-bottom: 10px;
+    }
+    .formulario-login-input {
+        height: 24px;
+        margin-bottom: 5px;
+    }
+    .formulario-login-input-submit {
+        height:32px ;
+    }
+    .formulario-login-campo-error {
+        height: 1px;
+        font-size: 8px;
+    }
+    .formulario-login-campo-error img {
+        width: 9px;
+    }
+    .formulario-login-footer {
+        height: 61px;
+    }
+    .formulario-login-footer-auxilio {
+        font-size: 11px;
+    }
+    .formulario-login-footer-botao {
+        height: 28px;
+        padding:0 7px;
+    }
+    .formulario-login-footer-link {
+        font-size: 0.7rem;
+    }
+    .footer-auth-pages {
+        height: 40px; 
+    }
+    
+    .footer-auth-pages-texto a{
+        font-size: 0.7rem;
+    }
+    
+    .footer-auth-pages-link-sobre {
+        font-size: 0.7rem;
+    }
+    
+    .footer-auth-pages-link-sobre,
+    .footer-auth-pages-texto {
+        padding: 0 15px;
+    }
+}
+
+/* responsividade da page de registro: */
+
+@media screen and (max-width: 824px) {
+    .imagem-register img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .formulario-register {
+        width:415px;
+        height: 515px;
+    }
+    .formulario-titulo {
+        padding-bottom: 4.5px;
+    }
+    .titulo-register {
+        font-size: 1.5rem;
+        margin-top:5px;
+    }
+    .subtitulo-register {
+        font-size: 14.5px;
+        margin-bottom: 7px;
+    }
+    .formulario-campo {
+        padding:18px 22.5px;
+    }
+    .formulario-input {
+        margin-bottom: 12px;
+        height: 34px;
+    }
+    .text-primary {
+        margin-top: 16px
+    }
+}
+
+@media screen and (max-width:650px) {
+    .imagem-register img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .formulario-register {
+        width:390px;
+        height: 490px;
+    }
+    .formulario-titulo {
+        padding-bottom: 4px;
+    }
+    .titulo-register {
+        font-size: 1.4rem;
+        margin-top:4px;
+    }
+    .subtitulo-register {
+        font-size: 14px;
+        margin-bottom: 6.5px;
+    }
+    .formulario-campo {
+        padding:16px 20.5px;
+    }
+    .formulario-input {
+        margin-bottom: 11.5px;
+        height: 32px;
+    }
+    .text-primary {
+        margin-top: 16px
+    }
+}
+
+@media screen and (max-width:508px) {
+    .imagem-register img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .formulario-register {
+        width:365px;
+        height: 465px;
+    }
+    .formulario-titulo {
+        padding-bottom: 3.5px;
+    }
+    .titulo-register {
+        font-size: 1.35rem;
+        margin-top:3.5px;
+    }
+    .subtitulo-register {
+        font-size: 13px;
+        margin-bottom: 6px;
+    }
+    .formulario-campo {
+        padding:15px 18.5px;
+    }
+    .formulario-input {
+        margin-bottom: 11px;
+        height: 30.5px;
+    }
+    .text-primary {
+        margin-top: 16px
+    }
+}
+
+@media screen and (max-width: 424px) {
+    .imagem-register img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .formulario-register {
+        width:335px;
+        height: 435px;
+    }
+    .formulario-titulo {
+        padding-bottom: 3px;
+    }
+    .titulo-register {
+        font-size: 1.2rem;
+        margin-top:3px;
+    }
+    .subtitulo-register {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+    .formulario-campo {
+        padding:14px 17px;
+    }
+    .formulario-input {
+        margin-bottom: 10px;
+        height: 29px;
+    }
+    .text-primary {
+        margin-top: 16px
+    }
+}
+
+@media screen and (max-width:384px) {
+    .imagem-register img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .formulario-register {
+        width:290px;
+        height: 390px;
+    }
+    .formulario-titulo {
+        padding-bottom: 2px;
+    }
+    .titulo-register {
+        font-size: 1.1rem;
+        margin-top:2.5px;
+    }
+    .subtitulo-register {
+        font-size: 11px;
+        margin-bottom: 4.5px;
+    }
+    .formulario-campo {
+        padding:12.5px 16px;
+    }
+    .formulario-input {
+        margin-bottom: 9.5px;
+        height: 26px;
+    }
+    .text-primary {
+        margin-top: 15px
+    }
+}
+
+@media screen and (max-width:310px) {
+    .imagem-register img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .formulario-register {
+        width:240px;
+        height: 340px;
+    }
+    .formulario-titulo {
+        padding-bottom: 2px;
+    }
+    .titulo-register {
+        font-size: 1rem;
+        margin-top:2px;
+    }
+    .subtitulo-register {
+        font-size: 10px;
+        margin-bottom: 4px;
+    }
+    .formulario-campo {
+        padding:12px 15.5px;
+    }
+    .formulario-input {
+        margin-bottom: 9px;
+        height: 24.5px;
+    }
+
+    .formulario-footer {
+        height: 58px;
+    }
+    .formulario-footer-input {
+        height: 38px;
+        text-align: center;
+    }
+    .text-primary {
+        margin-top:12px;
+        font-size:0.9rem;
+    }
+}
+
+@media screen and (max-width:260px) {
+    .imagem-register img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .formulario-register {
+        width:210px;
+        height: 310px;
+    }
+    .formulario-titulo {
+        padding-bottom: 1.5px;
+    }
+    .titulo-register {
+        font-size: 0.9rem;
+        margin-top:1.5px;
+    }
+    .subtitulo-register {
+        font-size: 9px;
+        margin-bottom: 3.5px;
+    }
+    .formulario-campo {
+        padding:11px 14px;
+    }
+    .formulario-input {
+        margin-bottom: 8px;
+        height: 22.5px;
+    }
+    .formulario-footer {
+        height: 53.5px;
+    }
+    .formulario-footer-input {
+        height: 37px;
+    }
+    .text-primary {
+        margin-top:11px;
+        font-size:0.9rem;
+    }
 }
