@@ -1,7 +1,7 @@
+import django
 from django.shortcuts import render, HttpResponseRedirect 
 from .models import DadosCard
 from django.urls import reverse
-
 
 def home(request):
 

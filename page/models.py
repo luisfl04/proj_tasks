@@ -8,7 +8,12 @@ class DadosCard(models.Model):
     done = models.BooleanField(default = False)
 
     def make_done(self):
-        self.done = True
-        self.save()
+        
+        if self.done == False:
+            self.done = True
+            self.save()
+        else:
+            self.done = False
+            self.save()
 
         
