@@ -13,6 +13,8 @@
   'opsz' 24
 }
 
+
+/* estilos gerais do corpo da page: */
 body {
   background-color: #dadde1;
 }
@@ -21,46 +23,74 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #1a1a00;
 }
 
 /* estilo padrão do card primário "minhas tarefas": */
 
 .card-minhas-tarefas {
   border: transparent;
-  width: 500px;
+  width: 800px;
   background-color: #fff;
-  border-radius: 7px;
-  font-family: monospace;
+  border-radius: 8px;
+  font-family: "Manrope", sans-serif;
+  margin-top: 20px;
 }
 
 .card-minhas-tarefas-head {
-
-}
+  height: 73px;
+  padding: 10px 8px;
+} 
 
 .card-minhas-tarefas-head-titulo {
-;
+  font-weight: 600;
 }
 
 .card-minhas-tarefas-campo{
-
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
 }
 
 .card-minhas-tarefas-campo-left {
-
-}
+  width: 400px;
+  padding-left: 10px;
+  border-right: 2px solid black;
+  display: flex;
+  flex-direction: column;
+} 
 
 .card-minhas-tarefas-campo-left-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 7px 10px;
+}
+
+.card-minhas-tarefas-campo-left-container-primario {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.card-minhas-tarefas-campo-left-container-primario-icone {
 
 }
 
-.card-minhas-tarefas-campo-left-container-link {
-text-decoration: none;
+.card-minhas-tarefas-campo-left-container-primario-texto {
+}
+
+.card-minhas-tarefas-campo-left-container-secondario {
+
+}
+
+.card-minhas-tarefas-campo-left-container-secondario-icone {
+
 }
 
 /* Estilos do campo do lado direito: */
 
 .card-minhas-tarefas-campo-right {
-
+  width: 400px;
 }
 
 .card-minhas-tarefas-campo-right-container {
